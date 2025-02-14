@@ -1,75 +1,18 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #FFF8DC;
-    font-size: 18px;
-}
-/* Navigation Bar */
-header {
-    background-color: #FF69B4;
-    padding: 20px;
-    color: white;
-    font-size: 24px;
-}
+// Change background color when Buy Now button is clicked
+document.querySelectorAll("button").forEach(button => {
+    button.addEventListener("click", () => {
+        alert("Item added to cart!");
+    });
+});
 
-nav a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.snack-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
-    background-color: #ADD8E6; /* Light blue background */
-}
-
-.snack {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.snack img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-}
-
-button {
-    background-color: #FF69B4;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 2px solid transparent;
-}
-
-button:hover {
-    background-color: #FF1493;
-}
-
-button:focus {
-    border-color: #FF1493;
-}
-
-@media (max-width: 768px) {
-    .snack-container {
-        grid-template-columns: 1fr;
+document.querySelector("form").addEventListener("submit", function(event) {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    
+    if (!name || !email) {
+        alert("Please fill in all fields.");
+        event.preventDefault();
+    } else {
+        alert("Form submitted successfully!");
     }
-}
-
-header h1 {
-    font-family: 'Roboto', sans-serif;
-}
+});
