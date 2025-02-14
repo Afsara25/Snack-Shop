@@ -1,75 +1,82 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snack Shack</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <!-- CSS File -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Navigation Bar -->
     <header>
         <h1>Snack Shack</h1>
         <nav>
-            <ul>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#video">Promo Video</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="#products">Products</a>
+            <a href="#promo">Promo Video</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <!-- Product Section -->
     <section id="products">
         <h2>Our Snacks</h2>
-        <div class="product-grid">
-            <div class="product">
+        <div class="snack-container">
+            <div class="snack">
                 <img src="images/lays.png" alt="Lay's Cherry Blossom Flavour">
                 <h3>Lay's Cherry Blossom</h3>
                 <p>$5.00</p>
-                <button class="buy-btn">Buy Now</button>
+                <button>Buy Now</button>
             </div>
-
-            <div class="product">
-                <img src="images/coke.png" alt="Coca-Cola Peach Flavour">
+            <div class="snack">
+                <img src="images/coca-cola.png" alt="Coca-Cola Peach Flavour">
                 <h3>Coca-Cola Peach</h3>
                 <p>$4.00</p>
-                <button class="buy-btn">Buy Now</button>
+                <button>Buy Now</button>
             </div>
-
-            <div class="product">
-                <img src="images/reeses.png" alt="Reese's Red Velvet">
+            <div class="snack">
+                <img src="images/reese.png" alt="Reese's Red Velvet">
                 <h3>Reese's Red Velvet</h3>
                 <p>$8.00</p>
-                <button class="buy-btn">Buy Now</button>
+                <button>Buy Now</button>
+            </div>
+            <div class="snack">
+                <img src="images/oreo.png" alt="Oreo Limited Edition">
+                <h3>Oreo Limited Edition</h3>
+                <p>$6.00</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="snack">
+                <img src="images/7up.png" alt="7Up Mojito Flavour">
+                <h3>7Up Mojito</h3>
+                <p>$3.50</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="snack">
+                <img src="images/drpepper.png" alt="Dr Pepper Vanilla Float">
+                <h3>Dr Pepper Vanilla Float</h3>
+                <p>$4.50</p>
+                <button>Buy Now</button>
             </div>
         </div>
     </section>
 
-    
+    <section id="promo">
+        <h2>Promo Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+        frameborder="0" allowfullscreen></iframe>
+    </section>
 
-    <!-- Contact Form -->
     <section id="contact">
         <h2>Contact Us</h2>
         <form>
             <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="name" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="email" id="email" required>
 
-            <button type="submit">Send</button>
+            <button type="submit">Submit</button>
         </form>
     </section>
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
-
 </body>
 </html>
