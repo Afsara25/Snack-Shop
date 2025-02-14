@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff5cc;
+    text-align: center;
+    margin: 0;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #ff6699;
+    padding: 20px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .product img {
+        width: 150px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+.buy-btn {
+    background-color: #ff6699;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Video Section */
+iframe {
+    margin-top: 20px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+input {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+button {
+    background-color: #ff6699;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
