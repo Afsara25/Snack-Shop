@@ -1,7 +1,5 @@
-// Change background color when Buy Now button is clicked
-document.querySelectorAll('.buy-btn').forEach(button => {
-    button.addEventListener('click', () => {
-        document.body.style.backgroundColor = "#ffcccb";
+document.querySelectorAll("button").forEach(button => {
+    button.addEventListener("click", () => {
         alert("Item added to cart!");
     });
 });
