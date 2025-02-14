@@ -5,6 +5,7 @@ body {
     padding: 0;
     text-align: center;
     background-color: #FFF8DC;
+    font-size: 18px;
 }
 /* Navigation Bar */
 header {
@@ -27,6 +28,7 @@ nav a {
     gap: 20px;
     padding: 20px;
     justify-content: center;
+    background-color: #ADD8E6; /* Light blue background */
 }
 
 .snack {
@@ -51,8 +53,23 @@ button {
     margin-top: 10px;
     cursor: pointer;
     border-radius: 5px;
+    border: 2px solid transparent;
 }
 
 button:hover {
     background-color: #FF1493;
+}
+
+button:focus {
+    border-color: #FF1493;
+}
+
+@media (max-width: 768px) {
+    .snack-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
 }
