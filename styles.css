@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,7 +6,7 @@ body {
     text-align: center;
     background-color: #FFF8DC;
 }
-
+/* Navigation Bar */
 header {
     background-color: #FF69B4;
     padding: 20px;
