@@ -49,6 +49,7 @@ nav a {
     padding: 20px;
     justify-content: center;
     background-color: #ADD8E6; /* Light blue background */
+    margin: 0 auto; /* Centering the container */
 }
 
 .snack {
