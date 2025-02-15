@@ -87,6 +87,18 @@ button:focus {
     border-color: #FF1493;
 }
 
+/* Promo Video Section */
+section#promo {
+    padding: 20px;
+}
+
+section#promo iframe {
+    width: 100%;
+    max-width: 560px; /* Ensures the width does not exceed 560px */
+    height: auto; /* Maintains aspect ratio */
+    aspect-ratio: 16/9; /* Maintains 16:9 aspect ratio */
+}
+
 /* Contact Us Section */
 section#contact {
     padding: 20px;
