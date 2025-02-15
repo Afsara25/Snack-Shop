@@ -1,6 +1,6 @@
 // Alert when "Buy Now" button is clicked
 document.querySelectorAll(".snack button").forEach(button => {
-    button.addEventListener("click", () => {
+    button.addEventListener("click", function() {
         alert("Item added to cart!");
     });
 });
