@@ -14,6 +14,7 @@ header {
     color: white;
     font-size: 24px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -33,13 +34,14 @@ nav {
     margin-top: 10px;
 }
 
-    nav a {
-        margin: 0 15px;
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-    }
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 
+/* Snack Container */
 .snack-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -57,11 +59,11 @@ nav {
     text-align: center;
 }
 
-    .snack img {
-        width: 100px;
-        height: 100px;
-        object-fit: contain;
-    }
+.snack img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
 
 button {
     background-color: #FF69B4;
@@ -74,16 +76,67 @@ button {
     border: 2px solid transparent;
 }
 
-    button:hover {
-        background-color: #FF1493;
-    }
+button:hover {
+    background-color: #FF1493;
+}
 
-    button:focus {
-        border-color: #FF1493;
-    }
+button:focus {
+    border-color: #FF1493;
+}
 
+/* Media Queries */
 @media (max-width: 768px) {
     .snack-container {
         grid-template-columns: 1fr;
+    }
+
+    nav a {
+        margin: 0 5px;
+        font-size: 18px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    .snack img {
+        width: 80px;
+        height: 80px;
+    }
+
+    button {
+        padding: 6px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .snack-container {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        margin: 0 3px;
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .snack img {
+        width: 60px;
+        height: 60px;
+    }
+
+    button {
+        padding: 4px 8px;
     }
 }
