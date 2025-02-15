@@ -59,6 +59,7 @@ nav a {
     text-align: center;
     flex: 1 1 300px; /* Adjusts the flex item to fit the mobile screen */
     max-width: 300px; /* Ensures the width does not exceed 300px */
+    margin: 10px; /* Adds margin for spacing */
 }
 
 .snack img {
@@ -84,6 +85,31 @@ button:hover {
 
 button:focus {
     border-color: #FF1493;
+}
+
+/* Contact Us Section */
+section#contact {
+    padding: 20px;
+}
+
+section#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#contact label {
+    margin: 10px 0 5px;
+}
+
+section#contact input {
+    width: 80%;
+    max-width: 300px; /* Ensures the width does not exceed 300px */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 /* Media Queries */
@@ -130,5 +156,9 @@ button:focus {
 
     button {
         padding: 4px 8px;
+    }
+
+    section#contact input {
+        width: 90%;
     }
 }
