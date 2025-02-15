@@ -43,13 +43,12 @@ nav a {
 
 /* Snack Container */
 .snack-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* Centering the snacks */
     gap: 20px;
     padding: 20px;
-    justify-content: center;
     background-color: #ADD8E6; /* Light blue background */
-    margin: 0 auto; /* Centering the container */
 }
 
 .snack {
@@ -58,6 +57,8 @@ nav a {
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    flex: 1 1 300px; /* Adjusts the flex item to fit the mobile screen */
+    max-width: 300px; /* Ensures the width does not exceed 300px */
 }
 
 .snack img {
@@ -87,21 +88,16 @@ button:focus {
 
 /* Media Queries */
 @media (max-width: 768px) {
-    .snack-container {
-        grid-template-columns: 1fr;
+    body {
+        font-size: 16px;
     }
 
     nav a {
-        margin: 0 5px;
         font-size: 18px;
     }
 
     header h1 {
         font-size: 20px;
-    }
-
-    body {
-        font-size: 16px;
     }
 
     .snack img {
@@ -115,21 +111,16 @@ button:focus {
 }
 
 @media (max-width: 480px) {
-    .snack-container {
-        grid-template-columns: 1fr;
+    body {
+        font-size: 14px;
     }
 
     nav a {
-        margin: 0 3px;
         font-size: 16px;
     }
 
     header h1 {
         font-size: 18px;
-    }
-
-    body {
-        font-size: 14px;
     }
 
     .snack img {
